@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Vue Javascript Framework Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<link rel="stylesheet" href="css/style.css">-->
+</head>
+<body>
+  <h1 id="title-text">Welcome to my site</h1>
+  <button id="button" onclick="clickedbutton()">Click me!</button>
+
+  <input type="text" onkeyup="textpressed(event)" />
+
+  <div>
+    <p>Your name is: <span id="namebox"></span></p>
+  </div>
+  <script>
+    // Writing to console
+    //console.log("hello");
+
+    function textpressed(event) {
+        var text = document.getElementById("textfield");
+        console.log(write.value);
+        var mybox = document.getElementById("namebox");
+        mybox.innerHTML = event.key;
+    }
+
+    // Declaring variables
+    let number = 1
+    var number2 = 2
+
+    //console.log("number is: " + number)
+
+    // Conditionals
+    if (number > 1) {
+      //console.log("Number is over 1")
+    }
+    else {
+      //console.log("Number is 1 here");
+    }
+
+    // Conditionals === vs ==
+    if (number === 1) {
+      //console.log("number is 1")
+    }
+
+    // Functions
+    function greet(name) {
+      console.log("Hello " + name);
+    }
+
+    //greet(3);
+
+    function clickedbutton() {
+      console.log("DONT CLICK IT!");
+      //alert("DONT!");
+      var element = document.getElementById("button");
+      console.log(element);
+      element.style.display = "none";
+
+      var title = document.getElementById("title-text");
+      console.log(title);
+      title.innerHTML = "DONT";
+    }
+  </script>
+</body>
+</html>

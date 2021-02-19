@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise - Form Components</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+      body { font-family: "Helvetica", "sans-serif" }
+      .exercise-title { margin-top: 70px; }
+      .answer-container { margin-top: 70px; margin-bottom: 70px; }
+      .exercise-image { margin-top: 70px; }
+      .hint { display: none; transition: 1s all ease; opacity: 0; }
+      a { text-decoration: none; font-weight: bold; color: #5080F8; }
+
+      .signup-form h1 {
+        margin: 0px;
+        opacity: .9;
+        font-weight: normal;
+      }
+
+      .signup-form .subheader-text {
+        font-size: 0.9rem;
+        opacity: .7;
+      }
+
+      .signup-form .signup-cancel {
+        margin: 0px;
+        font-size: .8rem;
+        opacity: .8;
+        color: #c0cbdb;
+      }
+
+      .signup-form .signup-cancel a {
+        color: #c4dcff;
+        text-decoration: underline;
+        font-weight: normal;
+      }
+
+      .signup-form .button {
+        color: #175CC1;
+      }
+
+      /* YOUR CSS STYLES GO HERE */
+
+      .signup-form {
+        width: 350px;
+        margin: 0 auto;
+        background-color: #0267f5;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+        align-items: center;
+      }
+
+      .signup-form h1, .signup-form p {
+        color: white;
+      }
+
+      .signup-form input {
+        box-sizing: border-box;
+        border: 0px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 250px;
+        
+      }
+
+      .signup-form .button {
+        width: 150px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="exercise-title">Exercise: Form Components</h2>
+    <p>Add CSS code inside <b>answer-container</b> to create similar section like in the image below.</p>
+    <h4>Hints</h4>
+    <p><a onclick="showHint('layout', event)" href="#">Hint: Layout</a></p>
+    <p class="hint hint_layout"><b>Layout:</b> I would probably use flexbox here to center these items. Set flexbox to column mode. Set width for your form to about 350px and good amount of padding for it.</p>
+    <p><a onclick="showHint('align', event)" href="#">Hint: Aligning text inside textfield</a></p>
+    <p class="hint hint_align"><b>Aligning text in textfield:</b> To align text inside textfield, just set text-align: center for your textfield! :)</p>
+    <p><a onclick="showHint('btnsize', event)" href="#">Hint: Button size</a></p>
+    <p class="hint hint_btnsize"><b>Button size:</b> If you have set flexbox to column mode, you need to then individually set your button to align-self: center and then set width for it.</p>
+
+    <img src="exercise_form.jpg" class="exercise-image" style="width: 100%;" alt="Exercise 1 - Image" />
+
+    <div class="answer-container answer-container-1">
+      <h2>Answer for the exercise:</h2>
+      <form class="signup-form">
+        <h1>Welcome!</h1>
+        <p class="subheader-text">Signup using the form below.</p><br />
+        <input type="text" class="textfield" placeholder="Your Name" />
+        <br />
+        <input type="text" class="textfield" placeholder="Your Email" />
+        <br /><br />
+        <input type="submit" class="button button-blue-full" value="Signup" />
+        <br />
+        <p class="signup-cancel">or <a href="#">cancel registration</a></p>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  function showHint(element, event = undefined) {
+    if (event) event.preventDefault();
+    var el = document.getElementsByClassName("hint_" + element);
+    if (el[0].style.display === "none" || !el[0].style.display) {
+      el[0].style.display = "block";
+      el[0].style.opacity = 1;
+    }
+    else {
+      el[0].style.display = "none";
+      el[0].style.opacity = 0;
+    }
+  }
+</script>

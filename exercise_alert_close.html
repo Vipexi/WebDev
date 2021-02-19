@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise - Box Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+      .answer-container-1 {
+        background: white;
+        padding: 20px;
+        width: 100px;       
+      }
+
+      .answer-img {
+        max-width: 100%;
+      }
+
+      /* YOUR STYLES GO HERE */
+      
+      .alert-alert-warning {
+        margin: auto;
+        position: relative;
+        color:#664d03;
+        text-align: center;
+        font-weight: bold;
+        width: 300px;
+        height: 95px;
+        background-color: #fff3cd;
+        padding: 10px;
+        border-radius: 8px;
+        }
+
+      .alert-close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 10px;
+        height: 15px;
+        padding: 5px;
+        color:#fff3cd;
+        background-color: #664d03;
+        border-radius: 5px;
+        }
+
+    
+      
+
+    </style>
+  </head>
+  <body>
+    <h2 class="exercise-title">Exercise: Modal with Close Button</h2>
+    <p>Add CSS code to make your box look about the same as in image below.</p>
+    <p>You can vertically center your box by setting <strong>margin: auto</strong> for your box (.alert).</p>
+    <p>Note that in order to move the close button (.alert-close) into it's right position you should use the <strong>position: absolute</strong> CSS property and then <strong>top</strong> and <strong>right</strong> properties. In order to make the position: absolute to work, you should set your main container (.alert) to be <strong>position: relative</strong>.</p>
+    <p>Best way to also limit your box  not be too long is to set <strong>max-width</strong> or <strong>width</strong> CSS property for it.</p>
+    <p>Background color for the alert is <strong>#fff3cd</strong>, color is <strong>#664d03</strong> and border color is <strong>#664d03</strong>.</p>
+    <img src="ex_alert_closeable.jpg" class="answer-img" alt="Exercise 1 - Image" />
+
+    <br /><br />
+    <h2>Answer for exercise:</h2>
+    <div class="answer-container-1">
+      <div class="alert-alert-warning">
+        <div class="alert-close">X</div>
+        <h2>Hey!</h2>
+        <p>I think I'm a warning...</p>
+      </div>
+    </div>
+  </body>
+</html>

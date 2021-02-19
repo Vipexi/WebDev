@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise - Flexbox Feature Sections</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+      body { font-family: "sans-serif" }
+      .exercise-title { margin-top: 70px; }
+      .answer-container { margin-top: 70px; margin-bottom: 70px; }
+      .exercise-image { margin-top: 70px; }
+      .hint { display: none; transition: 1s all ease; opacity: 0; }
+      a { text-decoration: none; font-weight: bold; color: #5080F8; }
+
+      /* YOUR CSS STYLES GO HERE */
+      .flexbox-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .flexbox-container div {
+        max-width: 180px;
+        text-align: center;
+        background: #fdfdfd;
+        border-radius: 10px;
+        border: 1px solid #f2f2f2;
+        color: dimgrey;
+        box-sizing: border-box;
+        margin-top: 15px;
+      }
+
+      .flexbox-container div img {
+        max-width: 100%;
+        padding-top: 15px;
+        height: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="exercise-title">Exercise: Features section with Flexbox</h2>
+    <p>Add HTML & CSS code inside <b>answer-container</b> to create similar section like in the image below. Use Flexbox for aligning the items next to each another. Wrap the images when they take up too much space. Sections should be 240px flex-basis.</p>
+    <h4>Hints</h4>
+    <p><a onclick="showHint('colors')" href="#">Hint: Colors</a></p>
+    <p class="hint hint_colors"><b>Colors for the exercise:</b> Text: dimgrey, item backgrounds: #fdfdfd, border: #f2f2f2</p>
+    <p><a onclick="showHint('html')" href="#">Hint: HTML Structure</a></p>
+    <p class="hint hint_html"><b>HTML structure should be something like:</b> 4 divs inside a flex container. Those four divs should have an image (img) and text (p) centerized.</p>
+    <p><a onclick="showHint('imgsize')" href="#">Hint: Making the image right sized</a></p>
+    <p class="hint hint_imgsize"><b>Making the image right sized:</b> Set max-width 100% for the images and then set same height for all the images, like 150px.</p>
+
+    <img src="ex2.jpg" class="exercise-image" style="width: 100%;" alt="Exercise 1 - Image" />
+
+    <div class="answer-container answer-container-1">
+      <!-- YOUR HTML GOES HERE -->
+      <h2>Answer for the exercise:</h2>
+      <div class="flexbox-container">
+        <div>
+          <img src="img1.png" />
+          <p>Appreciation</p>
+        </div>
+        <div>
+          <img src="img2.png" />
+          <p>Building</p>
+        </div>
+        <div>
+          <img src="img3.png" />
+          <p>Resume</p>
+        </div>
+        <div>
+          <img src="img4.png" />
+          <p>Statistics</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function showHint(element) {
+    var el = document.getElementsByClassName("hint_" + element);
+    if (el[0].style.display === "none" || !el[0].style.display) {
+      el[0].style.display = "block";
+      el[0].style.opacity = 1;
+    }
+    else {
+      el[0].style.display = "none";
+      el[0].style.opacity = 0;
+    }
+  }
+</script>

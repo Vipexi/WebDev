@@ -1,0 +1,11 @@
+<h> </h> -HEADING
+<p> </p> -PARAGRAPH
+<!DOCTYPE html> -Always in beginning of a HTML file
+<html lang="en"> -Language of the site and characters it uses en=english
+    <head>
+        <meta charset="=utf-8"> - beginning
+        <title>My new website</title> -Title
+        <meta name="description" content="My cool website description"> - Headers of headers
+
+https://www.w3schools.com/html/html_entities.asp <-- html_entities
+

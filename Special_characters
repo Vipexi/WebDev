@@ -1,0 +1,172 @@
+Special Characters Cheatsheet
+@    Ampersat, at symbol
+&     Ampersand
+#     Hash
+~     Tilde
+!      Exclamation mark
+?     Question mark
+^     Caret
+'      Single quote
+"     Double quote
+(     Left parenthesis, ) Right parenthesis, () Parenthese
+{     Left curly bracket, } Right curly bracket, {} Curly brackets
+[     Left bracket, ] Right bracket, [] Brackets
+:     Colon
+;     Semicolon
+<    Less than
+>    Greater than
+=    Equals
+|     Pipe
+/     Slash
+\     Backslash
+-     Dash, minus
+_     Underscore
+*     Asterisk
+$     Dollar sign
+%    Percent sign
+
+Coding Shortcuts
+To further speed up your development speed, there are some common shortcuts you can use with text editors like Visual Studio Code.
+
+Windows
+General Shortcuts
+ctrl + s: Save document (SUPER IMPORTANT!!!)
+ctrl + c: Copy (SUPER IMPORTANT!!!)
+ctrl + v: Paste (SUPER IMPORTANT!!!)
+ctrl + x: Cut (be careful with this one, use copy instead always when can)
+ctrl + a: Select all text
+ctrl + b: Make selected text bold
+ctrl + u: Make selected text italic
+
+Text Editing
+home: Move cursor to start of line
+end: Move cursor to end of line
+ctrl + left: Move cursor to left of current word
+ctrl + right: Move cursor to right of current word
+ctrl + up: Move cursor to starting of file
+ctrl + down: Move cursor to end of file
+
+Add shift to any of these to combinations to select text.
+
+/*/*  px, %, rem, em, (less commonly used)
+1. Universal selector
+2. Type Selector
+3. Class selector / ID Selector
+4. Attribute Selector
+*/
+
+
+/*Combinator
+1. Descendant combinator (Lots of use!)
+2. Child combinator (Lots of use!)
+3. Adjacent Sibling combinator
+4. General Sibling combinator
+*/
+
+
+
+
+/* Grouping*/
+/*h1, h2, #main-heading-cool-styling {
+    font-weight: normal;
+
+}*/
+
+/* Class Selector
+.first-p {
+    font-size: 15px;
+    /*Cool font yeah*/
+    color:white;
+}
+/*Id Selector*/
+#main-heading-cool-styling {
+    transform: skew(20deg);
+    background-color: white;
+    font-size: 30px;
+}
+
+/*Attribute Selector*/
+/*a[href="index.html"] {
+    font-weight: bold;
+}*/
+
+input[type="text"] {
+    background: violet;
+    padding: 12px;
+    border: 0px;
+    border-radius: 8px;
+    color: black;
+}
+
+/*Universal Selector*/
+
+/* *{
+
+}*/
+
+/*html {
+
+}*/
+ 
+/*Type selector*/
+h1 {
+    background-color: rgba(80, 255, 147, 0.973);
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size:25px;
+    color:white;}
+
+nav {
+    border: 10px solid black;
+    border-radius: 5px;
+    padding: 5px; 
+    margin: 10px;
+    background-color: black;
+    box-shadow: 5px 5px 20px 5px green;
+}
+
+/* Text styles*/
+        
+/*p {
+    font-size: 15px;
+    
+    color:black;
+}*/
+
+/* TODO: Crazy colored background*/
+body {
+background-color: rgba(76, 0, 255, 0.521)
+}
+
+.second-h1 {
+    background-color: red;
+    color: black;
+    text-align: center;
+    border: 5px dotted black; 
+}
+
+/*.unit.testing {
+    background-color: blue;
+    width: 100%;
+    height: 100vh; 
+}*/
+
+
+/*Descendant combinator*/
+main header  h1 {
+    background-color: orange !important;
+}
+
+/*Child combinator*/
+main > header > h1 {
+    background:green ;
+}
+
+main section article h1 {
+    background-color: blue;
+}

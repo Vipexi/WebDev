@@ -1,0 +1,32 @@
+/*.webcontainer{
+    max-width: 1060px;;
+    min-width: 400px;
+    height:auto;
+}*/
+
+*  {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-nav {
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.main-nav, a {
+    margin: 5%;
+    color: orange;
+    text-decoration: none;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading {
+    color: rgb(255, 115, 0);
+    margin-left: 10%;
+    margin-top: 10%;
+}
+

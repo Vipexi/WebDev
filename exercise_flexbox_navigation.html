@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise - Flexbox Navigations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+      .exercise-title { margin-top: 70px; }
+      .answer-container { margin-top: 70px; }
+      .exercise-image { margin-top: 70px; }
+      .hint { display: none; transition: 1s all ease; opacity: 0; }
+      a { text-decoration: none; font-weight: bold; color: #5080F8; }
+
+      /* YOUR CSS STYLES GO HERE */
+      .nav {
+        background-color: #5080F8;
+        width: 1219px;
+        height: 85px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: row;
+      }
+      
+      .nav  a {
+        margin: 0px 10px;
+        color:white;
+        font-weight: normal;        
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2 class="exercise-title">Exercise: Centerized Navigation with Flexbox</h2>
+    <p>Add HTML & CSS code inside <b>answer-container</b> to make your navigation look about the same as in image below. Use Flexbox for aligning the items in center of the navigation.</p>
+    <h4>Hints</h4>
+    <p><a onclick="showHint('html')" href="#">Show hint about HTML</a></p>
+    <p class="hint hint_html"><b>HTML structure should be something like:</b> div with some class that you can target it and inside it three links (a).</p>
+
+    <img src="ex_nav.jpg" class="exercise-image" alt="Exercise 1 - Image" />
+
+    <div class="answer-container-1">
+      <!-- YOUR HTML GOES HERE -->
+      <h2>Answer for the exercise:</h2>
+      <div class="nav">
+        <a href="ex_alert_closeable.jpg" target="_blank">Home</a>
+        <a href="ex_nav.jpg" target="_blank">About</a>
+        <a href="img/desert.jpeg" target="_blank">Blog</a>
+      </div>
+      
+    </div>
+  </body>
+</html>
+
+<script>
+  function showHint(element) {
+    var el = document.getElementsByClassName("hint_" + element);
+    if (el[0].style.display === "none" || !el[0].style.display) {
+      el[0].style.display = "block";
+      el[0].style.opacity = 1;
+    }
+    else {
+      el[0].style.display = "none";
+      el[0].style.opacity = 0;
+    }
+  }
+</script>

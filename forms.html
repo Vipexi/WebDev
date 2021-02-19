@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=utf-8">
+    <title>Forms example</title>
+        
+</head>
+<body>
+   <form>
+        <fieldset>
+                <legend>Your details</legend>
+
+                    <label for="firstname"> First Name: </label>
+                    <input type="text" placeholder="Your first name" value="Ville" name="firstname" id="firstname"/>
+                    <br/> <br/>
+                    
+                    <label for="lastname"> Last Name: </label>
+                    <input type="text" placeholder="Your lastname" value="Vihtalahti" name="lastname" id="lastname"/>
+                    <br/> <br/>
+                    
+                    <label for="age"> Your Age: </label>
+                    <input type="text" placeholder="Your Age" value="28" name="age?" id="age"/>
+                    <br/> <br/>
+
+                    <label for="password"> Type new password: </label>
+                    <input type="password" placeholder="Your password please?" value="Hikisukka?" name="password" id="password"/>
+                    <br/> <br/>
+                    
+                    <label for="file"> Please upload a file: </label>
+                    <input type="file" placeholder="Your file please?" name="file" id="file"/>
+                    <br/> <br/>
+
+                    <label for="comment-text">Write your comment:</label>
+                    <textarea id="comment-text" name="comment-text" rows="10" cols="40">Nice item?</textarea>
+                    <br/> <br/>
+                    <br/> <br/>
+       
+                    <label for="games">What is your favorite game?</label>
+                    <select id="games" name="games">
+                    <option value="tetris">Tetris</option>
+                    <option value="supermario">Super Mario</option>
+                    <option value="fallout">Fallout</option>
+                    <option value="minecraft">Minecraft</option>
+                    <option value="fortnite">Fortnite</option>
+                    <option value="cyberpunk">Cyberpunk 2077 (release 2023)</option>
+                    <option value="quake2">Quake 2</option>
+                    <option value="sims">The Sims</option>
+                    </select>
+                    <br/> <br/>
+
+                <fieldset>
+                    <legend>What is your favourite color? (select all that apply)</legend>
+                    <input type="radio" name="color" id="purple" value="Purple" /> <label for="purple">Purple</label>
+                    <input type="radio" name="color" id="yellow" value="yellow" /> <label for="yellow">Yellow</label>
+                    <input type="checkbox" name="color" id="blue" value="Blue" /> <label for="blue">Blue</label>
+                    <input type="checkbox" name="color" id="red" value="Red" /> <label for="red">Red</label>
+                    <input type="checkbox" name="color" id="green" value="Green" /> <label for="green">Green</label>
+                </fieldset>
+                <br/> <br/>
+
+                <fieldset>
+                    <legend>Which console do you want to buy?</legend>
+                    <input type="checkbox" name="console" id="ps5" value="ps5"/> <label for="ps5">Playstation 5</label>
+                    <input type="checkbox" name="console" id="xsx" value="xsx"/> <label for="xsx">Xbox Series S</label>
+                </fieldset>
+                <br/>
+                <input type="submit" value="Submit your stuff"/>
+        </fieldset>
+   </form>     
+
+</body>
+</html>
