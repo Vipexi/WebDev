@@ -1,12 +1,11 @@
-/*.webcontainer{
-    max-width: 1060px;;
-    min-width: 400px;
-    height:auto;
-}*/
-
-*  {
+.whole-page {
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
+
 
 .main-nav {
     margin-left: 10%;
@@ -19,14 +18,198 @@
     text-decoration: none;
 }
 
-.header-logo{
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .heading {
-    color: rgb(255, 115, 0);
-    margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
 }
 
+
+
+.heading > div button {
+
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: medium;
+    background-color:rgb(255, 115, 0);
+    color: white;
+    border-radius: 5px;
+    width: 250px;
+}
+
+#main_header_png {
+    max-width: 800px;  
+    min-width: 400px;
+    max-height: 600px;
+    min-height: 400px;
+}
+
+
+#part_of_p2 {
+    font-weight:bolder;
+}
+
+
+
+#letusknowlink {
+    margin-left: 1%;
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+    
+}
+
+
+.picture-box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(233, 197, 129, 0.151);
+    color: rgb(255, 115, 0);
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.picture-box > h1 {
+    font-size: xx-large;
+}
+
+.the_pictures {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.wewrap{
+    background-color: white;
+    padding: 20px;
+}
+
+.crapple{
+    background-color: white;
+    padding: 20px;
+}
+
+.camproid{
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+
+.howitworks{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    right: 0;
+    color: lightgray;
+    font-size: xx-large;
+    
+}
+
+#howitworks-logo{
+    max-width: 750px;
+    max-height: 600px;
+    min-width: 400px;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+.content p:hover{
+    color: rgb(255, 115, 0);
+
+}
+
+
+
+.purchase-box{
+    display: flex;
+    justify-content: center;
+    margin: 100px 60px 50px 60px;
+    background-color: rgba(233, 197, 129, 0.151);
+    border-radius: 15px;
+    
+}
+
+.purchase-box p {
+    margin-top: 10%;
+    font-size: x-large;
+}
+
+.textfield {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 25px;
+
+}
+
+#pay{
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: medium;
+    background-color:rgb(255, 115, 0);
+    color: white;
+    border-radius: 5px;
+    align-content: center;
+    margin-top: 25px;
+    margin: 10%;
+}
+
+.footer-container {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    margin-bottom: 0;
+    
+  }
+
+  #part_of_p {
+    opacity: 0.5;
+}
+
+@media only screen and (min-width: 400px) {
+    
+
+    .heading {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .howitworks {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+  }
+
+@media only screen and ( max-width: 1060px) {
+    .whole-page {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }

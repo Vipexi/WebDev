@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    
 </head>
-<body>
+<body class="whole-page">
     <header>
         <div class="main-nav">
             <nav>
@@ -18,14 +19,64 @@
             </nav>
         </div>
     </header>
-    <section>
-        <img class="header-logo" src="main_header.svg">
-    </section>
-    <section class="heading">
-        <h1>Your Site</h1>
 
-        <h3>Your World</h3>
+    <section class="heading">
+        <img id="main_header_png" src="main_header.png"/>
+        <div>            
+            <h1 style="color:rgb(255, 115, 0)">Your Site</h1>
+            <br>
+            <h3 style="color: rgb(255, 115, 0);">Your World</h3>
+            <p style="color: brown;"><span id="part_of_p2">YourSiteYourWorld</span> is a<br>revolutionary product that you<br>pay for and get nothing in<br>return. Simple as that!</p>
+            <button>Signup now!</button>
+        </div>
+       
+
     </section>
+
+    <section class="picture-box">
+        <h1>Used by multiple Companies</h1>
+        <h3>Used by your company?<a id ="letusknowlink" href="#">Let us know!</a></h3>
+        <div class="the_pictures">
+            <div class ="wewrap">
+                <img src="company1_wewrap.png">
+                <p>WeWrap</p>
+            </div>
+            <div class ="crapple">
+                <img src="company2_crapple.png">
+                <p>CrApple</p>
+            </div>
+            <div class="camproid">
+                <img src="company3_campdroid.png">
+                <p>CAmproid</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="howitworks">
+        <img id="howitworks-logo" src="howitworks.png">
+        <div class="content">
+            <p style="color: rgb(255, 115, 0);">HOW IT WORKS</p>
+            <p>You pay a small fee of $9.99</p>
+            <p>Wait for confirmation email and get nothing</p>
+            <p>Enjoy!</p>
+        </div>
+        
+    </section>
+    <section class="purchase-box">
+        <form>
+            <p>Ready to purchase?</p>
+            <input type="text" class="textfield" placeholder="Your Name" />
+            <br>
+            <input type="text" class="textfield" placeholder="Your Email Address" />
+            <br>
+            <input type="submit" id="pay" value="Purchase" />
+        </form>
+    </section>
+    
+    <section class="footer-container">
+        <p><span id="part_of_p">Created by</span> <b>Foley Company Ltd</b></p>
+    </section>
+    
 
 </body>
 </html>
